@@ -1,0 +1,93 @@
+/* تصميم الوضع النهاري */
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #222;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 2em;
+  color: #ff6f61;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* عناصر الإدخال */
+input[type="date"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1em;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff9800;
+  color: white;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e68900;
+}
+
+/* تصميم الوضع الليلي */
+body.dark {
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+  color: #fff;
+}
+
+body.dark .container {
+  background: rgba(40, 40, 40, 0.9);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* قسم الأحداث التاريخية */
+#historical-events {
+  margin-top: 20px;
+  text-align: right; /* محاذاة النص لليمين */
+  font-size: 1em;
+  direction: rtl; /* اتجاه النص من اليمين إلى اليسار */
+}
+
+#events-list {
+  list-style-type: none;
+  padding: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  color: #222;
+}
+
+body.dark #events-list {
+  background: #444;
+  color: #fff;
+}

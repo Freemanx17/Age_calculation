@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator - Bouzidi</title>
+  <link rel="stylesheet" href="style.css"> <!-- رابط ملف CSS -->
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Age Calculator</h1>
+      <h2 class="glowing">"Bouzidi"</h2>
+      <div class="theme-switcher">
+        <label for="dark-mode-toggle">
+          <input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()">
+          <span class="icon">🌙</span>
+        </label>
+      </div>
+    </div>
+    <p id="instruction">Enter your birthdate to calculate your age and see historical events.</p>
+    <div class="input-options">
+      <input type="date" id="birthdate" placeholder="Select your birthdate">
+    </div>
+    <div>
+      <button onclick="calculateAge()">Calculate Age</button>
+      <button onclick="resetForm()">Reset</button>
+    </div>
+    <div id="result"></div>
+    <div id="historical-events">
+      <h3>أبرز الأحداث التاريخية</h3>
+      <ul id="events-list"></ul> <!-- قائمة الأحداث -->
+    </div>
+  </div>
+  <script src="script.js"></script> <!-- رابط ملف JavaScript -->
+</body>
+</html>
